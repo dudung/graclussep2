@@ -1,2 +1,2 @@
 # tests
-tests for graclussep2
+formal tests for graclussep2

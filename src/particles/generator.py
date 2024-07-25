@@ -1,4 +1,4 @@
-import numpy as np
+import math
 
 def create_cluster_238_circular(diameter):
     """
@@ -22,7 +22,7 @@ def create_cluster_238_circular(diameter):
     of each particle.
     """
     npar = 238
-    dq = 2 * np.pi / 10
+    dq = 2 * math.pi / 10
     xx = []
     yy = []
     rr = []
@@ -34,65 +34,65 @@ def create_cluster_238_circular(diameter):
             yy.append(y)
         elif 1 <= i and i <= 6:
             j = i - 1
-            q = j * np.pi / 3.0
-            x = diameter * np.cos(q)
-            y = diameter * np.sin(q)
+            q = j * math.pi / 3.0
+            x = diameter * math.cos(q)
+            y = diameter * math.sin(q)
             xx.append(x)
             yy.append(y)
         elif 7 <= i and i <= 18:
             j = i - 7
-            q = j * np.pi / 6.0
-            x = 2 * diameter * np.cos(q + dq)
-            y = 2 * diameter * np.sin(q + dq)
+            q = j * math.pi / 6.0
+            x = 2 * diameter * math.cos(q + dq)
+            y = 2 * diameter * math.sin(q + dq)
             xx.append(x)
             yy.append(y)
         elif 19 <= i and i <= 36:
             j = i - 19
-            q = j * np.pi / 9.0
-            x = 3 * diameter * np.cos(q + 2 * dq)
-            y = 3 * diameter * np.sin(q + 2 * dq)
+            q = j * math.pi / 9.0
+            x = 3 * diameter * math.cos(q + 2 * dq)
+            y = 3 * diameter * math.sin(q + 2 * dq)
             xx.append(x)
             yy.append(y)
         elif 37 <= i and i <= 60:
             j = i - 37
-            q = j * np.pi / 12.0
-            x = 4 * diameter * np.cos(q + 3 * dq)
-            y = 4 * diameter * np.sin(q + 3 * dq)
+            q = j * math.pi / 12.0
+            x = 4 * diameter * math.cos(q + 3 * dq)
+            y = 4 * diameter * math.sin(q + 3 * dq)
             xx.append(x)
             yy.append(y)
         elif 61 <= i and i <= 90:
             j = i - 61
-            q = j * np.pi / 15.0
-            x = 5 * diameter * np.cos(q + 4 * dq)
-            y = 5 * diameter * np.sin(q + 4 * dq)
+            q = j * math.pi / 15.0
+            x = 5 * diameter * math.cos(q + 4 * dq)
+            y = 5 * diameter * math.sin(q + 4 * dq)
             xx.append(x)
             yy.append(y)
         elif 91 <= i and i <= 126:
             j = i - 91
-            q = j * np.pi / 18.0
-            x = 6 * diameter * np.cos(q + 5 * dq)
-            y = 6 * diameter * np.sin(q + 5 * dq)
+            q = j * math.pi / 18.0
+            x = 6 * diameter * math.cos(q + 5 * dq)
+            y = 6 * diameter * math.sin(q + 5 * dq)
             xx.append(x)
             yy.append(y)
         elif 127 <= i and i <= 168:
             j = i - 127
-            q = j * np.pi / 21.0
-            x = 7 * diameter * np.cos(q + 6 * dq)
-            y = 7 * diameter * np.sin(q + 6 * dq)
+            q = j * math.pi / 21.0
+            x = 7 * diameter * math.cos(q + 6 * dq)
+            y = 7 * diameter * math.sin(q + 6 * dq)
             xx.append(x)
             yy.append(y)
         elif 169 <= i and i <= 216:
             j = i - 169
-            q = j * np.pi / 24.0
-            x = 8 * diameter * np.cos(q + 7 * dq)
-            y = 8 * diameter * np.sin(q + 7 * dq)
+            q = j * math.pi / 24.0
+            x = 8 * diameter * math.cos(q + 7 * dq)
+            y = 8 * diameter * math.sin(q + 7 * dq)
             xx.append(x)
             yy.append(y)
         elif 217 <= i and i <= 238:
             j = i - 217
-            q = j * np.pi / 21.0 * 2
-            x = 9 * diameter * np.cos(q + 8 * dq)
-            y = 9 * diameter * np.sin(q + 8 * dq)
+            q = j * math.pi / 21.0 * 2
+            x = 9 * diameter * math.cos(q + 8 * dq)
+            y = 9 * diameter * math.sin(q + 8 * dq)
             xx.append(x)
             yy.append(y)
         else:

@@ -10,6 +10,8 @@ attrs==23.2.0
 Babel==2.15.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
+build==1.2.1
+butiran==0.0.9
 certifi==2024.2.2
 cffi==1.16.0
 charset-normalizer==3.3.2
@@ -20,11 +22,16 @@ cycler==0.12.1
 debugpy==1.8.1
 decorator==5.1.1
 defusedxml==0.7.1
+et-xmlfile==1.1.0
 executing==2.0.1
 fastjsonschema==2.19.1
+ffmpeg-python==0.2.0
+ffmpegio==0.10.0.post0
+ffmpegio-core==0.10.0
 flatbuffers==24.3.25
 fonttools==4.51.0
 fqdn==1.5.1
+future==1.0.0
 gast==0.5.4
 google-pasta==0.2.0
 graphviz==0.20.3
@@ -34,6 +41,7 @@ h5py==3.11.0
 httpcore==1.0.5
 httpx==0.27.0
 idna==3.7
+iniconfig==2.0.0
 ipykernel==6.29.4
 ipython==8.24.0
 ipywidgets==8.1.2
@@ -57,8 +65,10 @@ jupyterlab==4.1.8
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.1
 jupyterlab_widgets==3.0.10
+jupyterthemes==0.20.0
 keras==3.3.3
 kiwisolver==1.4.5
+lesscpy==0.15.1
 libclang==18.1.1
 Markdown==3.6
 markdown-it-py==3.0.0
@@ -78,6 +88,7 @@ notebook==7.1.3
 notebook_shim==0.2.4
 numpy==1.26.4
 opencv-python==4.9.0.80
+openpyxl==3.1.3
 opt-einsum==3.3.0
 optree==0.11.0
 overrides==7.7.0
@@ -87,6 +98,8 @@ pandocfilters==1.5.1
 parso==0.8.4
 pillow==10.3.0
 platformdirs==4.2.1
+pluggy==1.5.0
+ply==3.11
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
 protobuf==4.25.3
@@ -96,6 +109,7 @@ pycparser==2.22
 pydot==2.0.0
 Pygments==2.18.0
 pyparsing==3.1.2
+pyproject_hooks==1.1.0
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
 pytz==2024.1
@@ -106,6 +120,8 @@ pyzmq==26.0.3
 qtconsole==5.5.2
 QtPy==2.4.1
 referencing==0.35.1
+# Editable install with no version control (remah==0.0.5)
+-e m:\remah\src\remah\python
 requests==2.31.0
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
